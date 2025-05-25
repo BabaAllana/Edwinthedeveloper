@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edwin Atitwa – Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Edwin Logo" class="logo">
+    <h1>Hi, I'm Edwin</h1>
+    <p>I design smart websites & dashboards for African businesses.</p>
+    <a href="https://wa.me/254723990563" class="btn">WhatsApp Me</a>
+    <button onclick="toggleDarkMode()" class="toggle">Toggle Dark Mode</button>
+  </header>
+
+  <section>
+    <h2>Services</h2>
+    <ul>
+      <li>Business Websites & Landing Pages</li>
+      <li>Realtime Dashboards (Insurance, POS, CRM)</li>
+      <li>Progressive Web Apps</li>
+      <li>M-Pesa Checkout Integration</li>
+      <li>UI/UX Design & Speed Optimization</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Recent Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="images/safari-vibes.jpg" alt="SafariVibes">
+        <h3>SafariVibes Kenya</h3>
+        <p>Roadtrip booking site with WhatsApp chat & calendar integration.</p>
+      </div>
+      <div class="project">
+        <img src="images/insurance-dashboard.jpg" alt="Insurance Dashboard">
+        <h3>Insurance CRM Dashboard</h3>
+        <p>Built for Liberty Life agents – real-time leads, client portfolio, and pipeline tracking.</p>
+      </div>
+      <div class="project">
+        <img src="images/pos-system.jpg" alt="POS System">
+        <h3>Retail POS System</h3>
+        <p>Offline-ready POS web app for local shops, powered by LocalStorage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Testimonials</h2>
+    <blockquote>
+      "Edwin transformed our agency’s process. His dashboard is a game changer!"  
+      <br><strong>— Valentine, Liberty Life</strong>
+    </blockquote>
+    <blockquote>
+      "My bookings doubled since launching SafariVibes. Highly recommend him!"  
+      <br><strong>— Moses, SafariVibes Kenya</strong>
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mjvnyvev" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Edwin Atitwa | Web Developer Kenya</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
